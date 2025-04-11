@@ -19,14 +19,15 @@ export default function Education() {
       period: "2021 - 2025",
       gpa: "3.63 GPA",
       activities: ["Himpunan Mahasiswa Fisika Teknik ITB (HMFT-ITB)", "Unit Bola Voli (UBV)"],
-      logo: "/placeholder.svg?height=80&width=80",
+      logo: "https://media.licdn.com/dms/image/v2/C560BAQGJoYkUiQpUKA/company-logo_200_200/company-logo_200_200/0/1630672186443/itb_logo?e=1749686400&v=beta&t=znGpwuOkZeiCFFchL9mhpLKCjZJibQ0XGZCkKPK84bU",
     },
     {
       institution: "SMA IT AL BINAA IBS",
       degree: "High School, Mathematics and Natural Science",
       period: "2018 - 2021",
+      gpa: "92.3/100 Average",
       activities: ["Student Council", "Graphic Design", "Physics Club", "Broadcasting", "Volleyball Club", "Mentoring"],
-      logo: "/placeholder.svg?height=80&width=80",
+      logo: "https://albinaa.web.id/utama/wp-content/uploads/sites/5/2024/11/cropped-LOGO-BARU-AL-BINAA-150x150-1.png",
     },
   ]
 
@@ -71,8 +72,8 @@ export default function Education() {
     <section id="education" className="py-20 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Education</h2>
-          <div className="w-20 h-1 bg-primary my-4"></div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">🎓 Education</h2>
+          <div className="w-20 h-1 bg-primary my-4 mt-6"></div>
           <p className="text-muted-foreground max-w-[700px]">My academic background and achievements</p>
         </div>
 
@@ -91,11 +92,11 @@ export default function Education() {
                 <Card key={index}>
                   <CardContent className="p-6">
                     <div className="flex items-start">
-                      <div className="mr-4 rounded-md overflow-hidden w-16 h-16 flex-shrink-0 bg-muted flex items-center justify-center">
+                      <div className="mr-4 rounded-md overflow-hidden w-14 h-14 flex-shrink-0 flex items-center justify-center">
                         <img
                           src={edu.logo || "/placeholder.svg"}
                           alt={edu.institution}
-                          className="w-12 h-12 object-contain"
+                          className="w-14 h-14 object-contain"
                         />
                       </div>
                       <div>

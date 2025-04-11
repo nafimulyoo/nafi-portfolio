@@ -14,16 +14,16 @@ export default function About() {
     <section id="about" className="py-20 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About Me</h2>
-          <div className="w-20 h-1 bg-primary my-4"></div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">👤 About Me</h2>
+          <div className="w-20 h-1 bg-primary my-4 mt-6"></div>
         </div>
 
-        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div ref={ref} className="flex gap-12 mx-12 items-center flex-wrap">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.5 }}
-            className="space-y-3"
+            className="space-y-3 flex-1 min-w-full md:min-w-[60%]"
           >
              <Card className="">
                 <CardContent className="p-6">
@@ -63,10 +63,10 @@ export default function About() {
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative h-[400px] rounded-lg overflow-hidden shadow-xl"
+            className="relative h-[500px] w-[1200px] rounded-lg overflow-hidden shadow-xl flex-1 min-w-full md:min-w-[34%]"
           >
             <img
-              src="/placeholder.svg?height=400&width=600"
+              src="/potrait.jpg"
               alt="Nafi Mulyo Kusumo"
               className="object-cover w-full h-full"
             />

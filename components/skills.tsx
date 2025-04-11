@@ -10,8 +10,11 @@ import {
   SiPostgresql, SiMysql, SiMongodb, SiApachespark, SiApachekafka, 
   SiGooglecloud, SiFirebase, SiDocker, SiGithubactions, SiVercel,
   SiTensorflow, SiPytorch, SiOpencv, SiHuggingface, SiFastapi,
-  SiReact, SiNextdotjs, SiTailwindcss, SiLaravel, SiAndroidstudio, 
+  SiReact, SiNextdotjs, SiTailwindcss, SiLaravel, SiAndroidstudio,
+  SiShadcnui,
+  SiPhp, 
 } from "react-icons/si"
+import { BsBarChartFill } from "react-icons/bs";
 import { IoLogoFirebase } from "react-icons/io5";
 import {  FaDatabase, FaGithub} from "react-icons/fa"
 import { TbBrandOpenai, TbBrandLaravel, TbApi, TbBrandMysql } from "react-icons/tb"
@@ -76,6 +79,7 @@ export default function Skills() {
         { name: "C", icon: <SiC className="w-6 h-6 text-foreground/80" /> },
         { name: "C++", icon: <SiCplusplus className="w-6 h-6 text-foreground/80" /> },
         { name: "Kotlin", icon: <SiKotlin className="w-6 h-6 text-foreground/80" /> },
+        { name: "PHP", icon: <SiPhp className="w-6 h-6 text-foreground/80" /> },
         { name: "SQL", icon: <FaDatabase className="w-6 h-6 text-foreground/80" /> },
       ],
     },
@@ -89,6 +93,7 @@ export default function Skills() {
         { name: "OpenCV", icon: <SiOpencv className="w-6 h-6 text-foreground/80" /> },
         { name: "Gymnasium", icon: <SiPython className="w-6 h-6 text-foreground/80" /> },
         { name: "Scikit-learn", icon: <SiPython className="w-6 h-6 text-foreground/80" /> },
+        { name: "Power BI", icon: <BsBarChartFill className="w-6 h-6 text-foreground/80" /> },
         { name: "HuggingFace", icon: <SiHuggingface className="w-6 h-6 text-foreground/80" /> },
       ],
     },
@@ -96,8 +101,9 @@ export default function Skills() {
       category: "Full-Stack Development",
       icon: <Layers className="h-6 w-6 text-primary" />,
       items: [
-        { name: "React", icon: <SiReact className="w-6 h-6 text-foreground/80" /> },
         { name: "Next.js", icon: <SiNextdotjs className="w-6 h-6 text-foreground/80" /> },
+        { name: "React", icon: <SiReact className="w-6 h-6 text-foreground/80" /> },
+        { name: "Shadcn/ui", icon: <SiShadcnui className="w-6 h-6 text-foreground/80" /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss className="w-6 h-6 text-foreground/80" /> },
         { name: "Laravel", icon: <TbBrandLaravel className="w-6 h-6 text-foreground/80" /> },
         { name: "FastAPI", icon: <SiFastapi className="w-6 h-6 text-foreground/80" /> },
@@ -148,8 +154,8 @@ export default function Skills() {
     <section id="skills" className="py-20">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Skills</h2>
-          <div className="w-20 h-1 bg-primary my-4"></div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">🛠️ My Skills</h2>
+          <div className="w-20 h-1 bg-primary my-4 mt-6"></div>
           <p className="text-muted-foreground max-w-[700px]">
             I specialize in these core areas, combining technical expertise with practical problem-solving
           </p>

@@ -100,8 +100,8 @@ export default function Projects() {
     <section id="projects" className="py-20 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">My Projects</h2>
-          <div className="w-20 h-1 bg-primary my-4"></div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">💻 My Projects</h2>
+          <div className="w-40 h-1 bg-primary my-4 mt-6"></div>
           <p className="text-muted-foreground max-w-[700px]">
             Here are some of my recent projects across different domains of expertise
           </p>
@@ -143,12 +143,11 @@ export default function Projects() {
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                   <p className="text-muted-foreground mb-4">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mt-auto">
-                    {project.tags.slice(0, 3).map((tag) => (
+                    {project.tags.map((tag) => (
                       <Badge key={tag} variant="secondary">
                         {tag}
                       </Badge>
                     ))}
-                    {project.tags.length > 3 && <Badge variant="outline">+{project.tags.length - 3} more</Badge>}
                   </div>
                 </CardContent>
                 <CardFooter className="p-6 pt-0 flex justify-between">

@@ -29,16 +29,16 @@ export default function Footer() {
             <Link href="#experience" className="text-muted-foreground hover:text-primary transition-colors">
               Experience
             </Link>
-            <Link href="#education" className="text-muted-foreground hover:text-primary transition-colors">
+            {/* <Link href="#education" className="text-muted-foreground hover:text-primary transition-colors">
               Education
-            </Link>
+            </Link> */}
             <Link href="#contact" className="text-muted-foreground hover:text-primary transition-colors">
               Contact
             </Link>
           </nav>
           <div className="flex items-center space-x-4">
             <a
-              href="https://github.com"
+              href="https://github.com/nafimulyoo"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -47,7 +47,7 @@ export default function Footer() {
               <span className="sr-only">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/nafimulyo"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -56,7 +56,7 @@ export default function Footer() {
               <span className="sr-only">LinkedIn</span>
             </a>
             <a
-              href="mailto:nafi.kusumo@example.com"
+              href="mailto:rxnafimulyo@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
             >
               <Mail size={20} />

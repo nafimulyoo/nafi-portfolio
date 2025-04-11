@@ -28,7 +28,7 @@ export default function Navbar() {
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
-    { name: "Education", href: "#education" },
+    // { name: "Education", href: "#education" },
   ]
 
   return (
@@ -39,7 +39,7 @@ export default function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold ml-4">
+        <Link href="/" className="text-xl font-bold ml-4">
           Nafi's <span className="text-primary">Portfolio</span>
         </Link>
 

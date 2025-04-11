@@ -76,17 +76,17 @@ export default function Contact() {
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       title: "Location",
-      content: "Bogor, West Java, Indonesia",
-      link: "https://maps.google.com?q=Bogor,+West+Java,+Indonesia",
+      content: "Kabupaten Bogor, West Java, Indonesia",
+      link: "https://maps.google.com?q=Kabupaten+Bogor,+West+Java,+Indonesia",
     },
   ]
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Get In Touch</h2>
-          <div className="w-20 h-1 bg-primary my-4"></div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">✉️ Get In Touch</h2>
+          <div className="w-20 h-1 bg-primary my-4 mt-6"></div>
           <p className="text-muted-foreground max-w-[700px]">
             Have a project in mind or want to collaborate? Feel free to reach out to me.
           </p>
@@ -187,7 +187,7 @@ export default function Contact() {
                 </p>
                 <div className="flex justify-center space-x-4">
                   <Button variant="outline" size="icon" asChild>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <a href="https://github.com/nafimulyoo" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -203,7 +203,7 @@ export default function Contact() {
                     </a>
                   </Button>
                   <Button variant="outline" size="icon" asChild>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <a href="https://linkedin.com/in/nafimulyo" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -221,7 +221,7 @@ export default function Contact() {
                     </a>
                   </Button>
                   <Button variant="outline" size="icon" asChild>
-                    <a href="mailto:nafi.kusumo@example.com" aria-label="Email">
+                    <a href="mailto:rxnafimulyo@gmail.com" aria-label="Email">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"

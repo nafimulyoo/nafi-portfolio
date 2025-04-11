@@ -18,22 +18,22 @@ export default function Experience() {
       company: "PT Astra International Tbk",
       location: "Jakarta, Indonesia",
       period: "Mar 2025 - Present",
-      description: "Working on data science and data strategies projects at one of Indonesia's largest conglomerates.",
-      skills: ["Data Science", "Data Strategies", "Data Engineering"],
+      description: "Working on data science and data strategies projects at one of Indonesia's largest conglomerates, focusing on Large Language Models and data product development.",
+      skills: ["Large Language Models", "Data Science", "Data Strategies", "Data Product"],
       type: "Internship",
-      logo: "/placeholder.svg?height=80&width=80",
+      logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEM6oE-kYjm-A/company-logo_200_200/company-logo_200_200/0/1631319377177?e=1749686400&v=beta&t=Ngy8tOWLMND6LrGF41s5UbaKJxFGF_27lqDMCZ_qiJI",
     },
-    {
-      title: "Engineering Data Science Lecturing Assistant",
-      company: "Institut Teknologi Bandung",
-      location: "Bandung, Indonesia",
-      period: "Jan 2025 - Present",
-      description:
-        "Assisting undergraduate students in learning data science concepts and techniques for engineering applications.",
-      skills: ["Python", "Data Science", "Teaching"],
-      type: "Part-time",
-      logo: "/placeholder.svg?height=80&width=80",
-    },
+    // {
+    //   title: "Engineering Data Science Lecturing Assistant",
+    //   company: "Institut Teknologi Bandung",
+    //   location: "Bandung, Indonesia",
+    //   period: "Jan 2025 - Present",
+    //   description:
+    //     "Assisting undergraduate students in learning data science concepts and techniques for engineering applications.",
+    //   skills: ["Python", "Data Science", "Teaching"],
+    //   type: "Part-time",
+    //   logo: "https://media.licdn.com/dms/image/v2/C560BAQGJoYkUiQpUKA/company-logo_200_200/company-logo_200_200/0/1630672186443/itb_logo?e=1749686400&v=beta&t=znGpwuOkZeiCFFchL9mhpLKCjZJibQ0XGZCkKPK84bU",
+    // },
     {
       title: "Instrument Inspection Engineer Intern",
       company: "PT Kilang Pertamina Internasional",
@@ -41,42 +41,53 @@ export default function Experience() {
       period: "Jul 2024 - Aug 2024",
       description:
         "Conducted a study of the PLC Emergency Shutdown System (ESD) at RU IV Cilacap, focusing on enhancing system reliability and performance. Analyzed root causes of module failures, explored channel segregation between RFCC and GTO units, and proposed solutions to improve system availability.",
-      skills: ["Safety Instrumented Systems", "Programmable Logic Controller (PLC)", "Reliability Engineering"],
+      skills: ["Industrial Control System", "Safety Instrumented Systems", "Programmable Logic Controller (PLC)", "Reliability Engineering"],
       type: "Internship",
-      logo: "/placeholder.svg?height=80&width=80",
+      logo: "https://media.licdn.com/dms/image/v2/C510BAQGE-Idze3oUkA/company-logo_200_200/company-logo_200_200/0/1630602806622?e=1749686400&v=beta&t=XpMWa_py6PRN_TL_5cWu_DKPeNBmUBQpv_kPSmzoMG4",
     },
     {
       title: "IoT Engineer Intern",
       company: "Elevarm",
-      location: "Remote",
+      location: "Bandung, West Java, Indonesia",
       period: "Mar 2024 - Jul 2024",
       description:
         "Specialized in the development and optimization of sensor-based systems for agricultural applications. Developed scheduling systems for climate chambers, established sensor calibration processes, and designed systems for accurate data transmission between devices and gateways.",
-      skills: ["Arduino", "Electronics", "IoT"],
+      skills: ["Arduino", "C++", "Electronics", "Internet of Things"],
       type: "Internship",
-      logo: "/placeholder.svg?height=80&width=80",
+      logo: "https://media.licdn.com/dms/image/v2/C560BAQGaDU7oTWTx2w/company-logo_200_200/company-logo_200_200/0/1645127224563/elevarm_logo?e=1749686400&v=beta&t=Qj2EDGUBZBV8Rj2qcF0I9W0VHfC-fe1BH6BdRM4M2B4",
     },
+    // {
+    //   title: "Engineering Physics Laboratory II Teaching Assistant",
+    //   company: "Institut Teknologi Bandung",
+    //   location: "Bandung, Indonesia",
+    //   period: "Jan 2024 - Jun 2024",
+    //   description:
+    //     "Guided and supervised laboratory students in learning Arduino and C++ for ESP32 microcontroller modules, as well as Android development with Kotlin for IoT applications.",
+    //   skills: ["Arduino", "C++", "Electronics", "Kotlin", "Android"],
+    //   type: "Part-time",
+    //   logo: "https://media.licdn.com/dms/image/v2/C560BAQGJoYkUiQpUKA/company-logo_200_200/company-logo_200_200/0/1630672186443/itb_logo?e=1749686400&v=beta&t=znGpwuOkZeiCFFchL9mhpLKCjZJibQ0XGZCkKPK84bU",
+    // },
     {
-      title: "Engineering Physics Laboratory II Teaching Assistant",
-      company: "Institut Teknologi Bandung",
-      location: "Bandung, Indonesia",
-      period: "Jan 2024 - Jun 2024",
+      title: "Large Language Model Engineer Intern",
+      company: "Javatech Automation",
+      location: "Remote",
+      period: "Jan 2024 - Mar 2024",
       description:
-        "Guided and supervised laboratory students in learning Arduino and C++ for ESP32 microcontroller modules, as well as Android development with Kotlin for IoT applications.",
-      skills: ["Arduino", "C++", "Kotlin"],
-      type: "Part-time",
-      logo: "/placeholder.svg?height=80&width=80",
-    },
+        "Worked on the development of an LLM-based query system for a large-scale database, focusing on enhancing data retrieval and user interaction.",
+      skills: ["Large Language Models", "FastAPI", "Next.js", "React"],
+      type: "Internship",
+      logo: "https://media.licdn.com/dms/image/v2/C510BAQHA4HeAkK_YKg/company-logo_200_200/company-logo_200_200/0/1630592338936?e=1749686400&v=beta&t=G3p57EbGYspO0xHFfRhRfTbnEGH4IgAHZ__dfp5B430"
+    }
   ]
 
   return (
     <section id="experience" className="py-20">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Experience</h2>
-          <div className="w-20 h-1 bg-primary my-4"></div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">💼 Experience</h2>
+          <div className="w-20 h-1 bg-primary my-4 mt-6"></div>
           <p className="text-muted-foreground max-w-[700px]">
-            My professional journey across various roles and organizations
+            My professional journey has been a blend of internships. Each experience has deepened my understanding of technology's role in solving real-world challenges.
           </p>
         </div>
 
@@ -106,11 +117,11 @@ export default function Experience() {
                   <Card>
                     <CardContent className="p-6">
                       <div className="flex items-start">
-                        <div className="mr-4 rounded-md overflow-hidden w-16 h-16 flex-shrink-0 bg-muted flex items-center justify-center">
+                        <div className="mr-4 rounded-md overflow-hidden w-14 h-14 flex-shrink-0 flex items-center justify-center">
                           <img
                             src={exp.logo || "/placeholder.svg"}
                             alt={exp.company}
-                            className="w-12 h-12 object-contain"
+                            className="w-14 h-14 object-contain"
                           />
                         </div>
                         <div className="flex-1">
@@ -119,7 +130,7 @@ export default function Experience() {
                               <h3 className="text-xl font-bold">{exp.title}</h3>
                               <p className="text-primary font-medium">{exp.company}</p>
                             </div>
-                            <Badge variant="outline">{exp.type}</Badge>
+                            <Badge variant="outline" className="flex flex-col"><div className="w-16 flex items-center justify-center">{exp.type}</div></Badge>
                           </div>
                           <div className="flex items-center text-sm text-muted-foreground mb-4">
                             <Briefcase className="mr-2 h-4 w-4" />

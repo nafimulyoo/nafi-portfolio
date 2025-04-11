@@ -48,7 +48,7 @@ export default function Hero() {
       }
 
       if (!isDeleting && currentText === fullText) {
-        setTimeout(() => setIsDeleting(true), 5000)
+        setTimeout(() => setIsDeleting(true), 3000)
       } else if (isDeleting && currentText === "") {
         setIsDeleting(false)
         setCurrentTextIndex(currentTextIndex + 1)
@@ -77,7 +77,7 @@ export default function Hero() {
             className="space-y-2"
           >
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
-              Hi, I'm {renderText()}<span className="animate-pulse font-thin">|</span>
+            👋 Hi, I'm {renderText()}<span className="animate-pulse font-thin">|</span>
             </h1>
             <div className="h-[60px]">
               <p className="text-xl md:text-2xl text-muted-foreground max-w-[700px] mx-auto mt-4">
@@ -91,7 +91,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="flex flex-wrap justify-center gap-4 pt-10"
+            className="flex flex-wrap justify-center gap-4 pt-8"
           >
             <Button size="lg" asChild>
               <a href="#projects">View My Work</a>
@@ -108,7 +108,7 @@ export default function Hero() {
             className="flex items-center space-x-4"
           >
             <a
-              href="https://github.com"
+              href="https://github.com/nafimulyoo"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -117,7 +117,7 @@ export default function Hero() {
               <span className="sr-only">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/nafimulyo"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -125,7 +125,7 @@ export default function Hero() {
               <Linkedin size={24} />
               <span className="sr-only">LinkedIn</span>
             </a>
-            <a href="mailto:contact@example.com" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="mailto:rxnafimulyo@gmail.com.com" className="text-muted-foreground hover:text-primary transition-colors">
               <Mail size={24} />
               <span className="sr-only">Email</span>
             </a>
