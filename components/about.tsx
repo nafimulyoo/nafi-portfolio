@@ -2,6 +2,7 @@
 
 import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
+import { Card, CardContent } from "@/components/ui/card"
 
 export default function About() {
   const { ref, inView } = useInView({
@@ -22,30 +23,40 @@ export default function About() {
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.5 }}
-            className="space-y-6"
+            className="space-y-3"
           >
-            <p className="text-muted-foreground">
-              Hi, I'm Nafi, I'm passionate about solving real-world problems by building cutting-edge AI solutions that
-              matter. I've had the chance to work on diverse projects, from LLM-based learning tools to smart IoT
-              systems—and each experience has strengthened my belief that great tech is born where research meets
-              usability.
-            </p>
-            <p className="text-muted-foreground">
-              Currently channeling this passion into my final-year thesis at Institut Teknologi Bandung (ITB):
-              "Development and Integration of Generative AI in Electrical Energy Monitoring for Smart Energy
-              Management".
-            </p>
-            <p className="text-muted-foreground">
-              I believe in lifelong learning and love connecting with fellow tech enthusiasts. Let's chat about:
-            </p>
-            <ul className="list-disc list-inside text-muted-foreground space-y-2">
-              <li>🤖 Generative AI (LLMs) for industrial applications</li>
-              <li>🔋 Smart energy tech and AI-driven sustainability solutions</li>
-              <li>🔧 Cross-disciplinary product innovation and development</li>
-            </ul>
-            <p className="text-muted-foreground">
-              Open to collaborations, internships, or just geeking out over the latest in tech!
-            </p>
+             <Card className="">
+                <CardContent className="p-6">
+                  <p className="text-muted-foreground">
+                    Hi, I'm <span className="font-bold">Nafi</span>, I'm passionate about solving real-world problems by building cutting-edge AI solutions that
+                    matter. I've had the chance to work on diverse projects, from LLM-based learning tools to smart IoT
+                    systems—and each experience has strengthened my belief that great tech is born where research meets
+                    usability.
+                  </p>
+                </CardContent>
+            </Card>
+            <Card className="">
+                <CardContent className="p-6">
+
+                <p className="text-muted-foreground">
+                  Let’s connect if you’re passionate about:
+                </p>
+                <div className="mt-2">
+                <div className="flex ml-4 text-muted-foreground">
+                  <span className="font-semibold">🚀</span><p className="ml-2"><span className="font-semibold"> AI for Good </span>– Leveraging LLMs, computer vision, and reinforcement learning for industrial and societal impact.</p>
+                </div>
+                <div className="flex ml-4 text-muted-foreground">
+                  <span className="font-semibold">⚡</span><p className="ml-2"><span className="font-semibold"> Sustainable Tech</span> – Smart energy, IoT, and AI-driven solutions for a greener future.</p>
+                </div>
+                <div className="flex ml-4 text-muted-foreground">
+                  <span className="font-semibold">🔧</span><p className="ml-2"><span className="font-semibold"> Full-Stack Innovation</span> - Cross-disciplinary product innovation and development, from embedded systems to scalable web apps,</p>
+                </div>
+                </div>
+                <p className="text-muted-foreground mt-2">
+                  Open to collaborations, internships, or just geeking out over the latest in tech!
+                </p>
+                </CardContent>
+              </Card>
           </motion.div>
 
           <motion.div

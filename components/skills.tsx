@@ -4,7 +4,21 @@ import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Brain, Database, Code, Cpu, BarChart3, Layers, Workflow, Lightbulb } from "lucide-react"
+import { Brain, Database, Code, Cpu, BarChart3, Layers, Cloud, Lightbulb } from "lucide-react"
+import { 
+  SiPython, SiJavascript, SiTypescript, SiC, SiCplusplus, SiKotlin, 
+  SiPostgresql, SiMysql, SiMongodb, SiApachespark, SiApachekafka, 
+  SiGooglecloud, SiFirebase, SiDocker, SiGithubactions, SiVercel,
+  SiTensorflow, SiPytorch, SiOpencv, SiHuggingface, SiFastapi,
+  SiReact, SiNextdotjs, SiTailwindcss, SiLaravel, SiAndroidstudio, 
+} from "react-icons/si"
+import { IoLogoFirebase } from "react-icons/io5";
+import {  FaDatabase, FaGithub} from "react-icons/fa"
+import { TbBrandOpenai, TbBrandLaravel, TbApi, TbBrandMysql } from "react-icons/tb"
+import { MdDesignServices, MdDataThresholding } from "react-icons/md"
+import { GiArtificialIntelligence } from "react-icons/gi"
+import { BiLogoPostgresql } from "react-icons/bi";
+import { LuBrainCircuit } from "react-icons/lu";
 
 export default function Skills() {
   const { ref, inView } = useInView({
@@ -18,34 +32,36 @@ export default function Skills() {
       icon: <Brain className="h-8 w-8 text-primary" />,
       skills: [
         "Deep Learning",
+        "Computer Vision", 
         "Natural Language Processing",
-        "Computer Vision",
         "Generative AI",
-        "LLMs",
+        "Large Language Models",
         "Reinforcement Learning",
       ],
     },
     {
-      title: "Data Science",
+      title: "Data Science & Engineering",
       icon: <BarChart3 className="h-8 w-8 text-primary" />,
       skills: [
         "Data Analysis",
         "Statistical Modeling",
         "Data Visualization",
-        "Feature Engineering",
-        "Data Strategies",
-        "Data Engineering",
+        "Big Data Processing",
+        "ETL Pipelines",
+        "Cloud Data Systems"
       ],
     },
     {
-      title: "Full Stack Development",
+      title: "Full-Stack & Mobile Development",
       icon: <Code className="h-8 w-8 text-primary" />,
-      skills: ["React.js", "Next.js", "Node.js", "Express", "Firebase", "RESTful APIs", "Tailwind CSS"],
-    },
-    {
-      title: "Embedded Systems & IoT",
-      icon: <Cpu className="h-8 w-8 text-primary" />,
-      skills: ["Arduino", "ESP32", "Sensor Integration", "IoT Protocols", "Embedded C/C++", "PCB Design"],
+      skills: [
+        "Frontend Development",
+        "Backend Development",
+        "Mobile Development",
+        "Database Design",
+        "API Development",
+        "DevOps Integration"
+      ],
     },
   ]
 
@@ -53,34 +69,80 @@ export default function Skills() {
     {
       category: "Languages",
       icon: <Code className="h-6 w-6 text-primary" />,
-      items: ["Python", "JavaScript", "TypeScript", "C/C++", "SQL", "Kotlin"],
+      items: [
+        { name: "Python", icon: <SiPython className="w-6 h-6 text-foreground/80" /> },
+        { name: "JavaScript", icon: <SiJavascript className="w-6 h-6 text-foreground/80" /> },
+        { name: "TypeScript", icon: <SiTypescript className="w-6 h-6 text-foreground/80" /> },
+        { name: "C", icon: <SiC className="w-6 h-6 text-foreground/80" /> },
+        { name: "C++", icon: <SiCplusplus className="w-6 h-6 text-foreground/80" /> },
+        { name: "Kotlin", icon: <SiKotlin className="w-6 h-6 text-foreground/80" /> },
+        { name: "SQL", icon: <FaDatabase className="w-6 h-6 text-foreground/80" /> },
+      ],
     },
     {
-      category: "Frameworks & Libraries",
+      category: "AI/ML & Data Science",
+      icon: <Brain className="h-6 w-6 text-primary" />,
+      items: [
+        { name: "TensorFlow", icon: <SiTensorflow className="w-6 h-6 text-foreground/80" /> },
+        { name: "PyTorch", icon: <SiPytorch className="w-6 h-6 text-foreground/80" /> },
+        { name: "LLMs", icon: <TbBrandOpenai className="w-6 h-6 text-foreground/80" /> },
+        { name: "OpenCV", icon: <SiOpencv className="w-6 h-6 text-foreground/80" /> },
+        { name: "Gymnasium", icon: <SiPython className="w-6 h-6 text-foreground/80" /> },
+        { name: "Scikit-learn", icon: <SiPython className="w-6 h-6 text-foreground/80" /> },
+        { name: "HuggingFace", icon: <SiHuggingface className="w-6 h-6 text-foreground/80" /> },
+      ],
+    },
+    {
+      category: "Full-Stack Development",
       icon: <Layers className="h-6 w-6 text-primary" />,
-      items: ["TensorFlow", "PyTorch", "React", "Next.js", "Express", "Scikit-learn", "Pandas"],
+      items: [
+        { name: "React", icon: <SiReact className="w-6 h-6 text-foreground/80" /> },
+        { name: "Next.js", icon: <SiNextdotjs className="w-6 h-6 text-foreground/80" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss className="w-6 h-6 text-foreground/80" /> },
+        { name: "Laravel", icon: <TbBrandLaravel className="w-6 h-6 text-foreground/80" /> },
+        { name: "FastAPI", icon: <SiFastapi className="w-6 h-6 text-foreground/80" /> },
+        { name: "Android Studio", icon: <SiAndroidstudio className="w-6 h-6 text-foreground/80" /> },
+      ],
     },
     {
-      category: "Tools & Platforms",
-      icon: <Workflow className="h-6 w-6 text-primary" />,
-      items: ["Git", "Docker", "AWS", "Firebase", "Vertex AI", "Jupyter", "VS Code"],
+      category: "Cloud & DevOps",
+      icon: <Cloud className="h-6 w-6 text-primary" />,
+      items: [
+        { name: "GCP", icon: <SiGooglecloud className="w-6 h-6 text-foreground/80" /> },
+        { name: "Vertex AI", icon: <Brain className="w-6 h-6 text-foreground/80" /> },
+        { name: "BigQuery", icon: <SiGooglecloud className="w-6 h-6 text-foreground/80" /> },
+        { name: "Docker", icon: <SiDocker className="w-6 h-6 text-foreground/80" /> },
+        { name: "GitHub Actions", icon: <FaGithub className="w-6 h-6 text-foreground/80" /> },
+        { name: "Firebase", icon: <IoLogoFirebase className="w-6 h-6 text-foreground/80" /> },
+        { name: "Vercel", icon: <SiVercel className="w-6 h-6 text-foreground/80" /> },
+      ],
     },
     {
-      category: "Databases",
+      category: "Data Engineering",
       icon: <Database className="h-6 w-6 text-primary" />,
-      items: ["MongoDB", "PostgreSQL", "MySQL", "Firebase Firestore"],
-    },
-    {
-      category: "IoT & Hardware",
-      icon: <Cpu className="h-6 w-6 text-primary" />,
-      items: ["Arduino", "ESP32", "Raspberry Pi", "Sensors", "Actuators", "MQTT"],
+      items: [
+        { name: "PostgreSQL", icon: <BiLogoPostgresql className="w-6 h-6 text-foreground/80" /> },
+        { name: "MySQL", icon: <TbBrandMysql className="w-6 h-6 text-foreground/80" /> },
+        { name: "MongoDB", icon: <SiMongodb className="w-6 h-6 text-foreground/80" /> },
+        { name: "Apache Spark", icon: <SiApachespark className="w-6 h-6 text-foreground/80" /> },
+        { name: "Airflow", icon: <MdDataThresholding className="w-6 h-6 text-foreground/80" /> },
+        { name: "Kafka", icon: <SiApachekafka className="w-6 h-6 text-foreground/80" /> },
+        { name: "BigQuery", icon: <SiGooglecloud className="w-6 h-6 text-foreground/80" /> },
+      ],
     },
     {
       category: "Methodologies",
       icon: <Lightbulb className="h-6 w-6 text-primary" />,
-      items: ["Agile", "CI/CD", "TDD", "Design Thinking", "SCRUM"],
+      items: [
+        { name: "Agile", icon: <Lightbulb className="w-6 h-6 text-foreground/80" /> },
+        { name: "MLOps", icon: <Brain className="w-6 h-6 text-foreground/80" /> },
+        { name: "Data Pipelines", icon: <MdDataThresholding className="w-6 h-6 text-foreground/80" /> },
+        { name: "Test-Driven Development", icon: <Code className="w-6 h-6 text-foreground/80" /> },
+        { name: "Design Thinking", icon: <MdDesignServices className="w-6 h-6 text-foreground/80" /> },
+        { name: "Microservices", icon: <TbApi className="w-6 h-6 text-foreground/80" /> },
+      ],
     },
-  ]
+  ];
 
   return (
     <section id="skills" className="py-20">
@@ -93,7 +155,7 @@ export default function Skills() {
           </p>
         </div>
 
-        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.title}
@@ -105,10 +167,10 @@ export default function Skills() {
                 <CardContent className="p-6">
                   <div className="flex flex-col items-center text-center">
                     <div className="p-3 rounded-full bg-primary/10 mb-4">{category.icon}</div>
-                    <h3 className="text-xl font-bold mb-4">{category.title}</h3>
+                    <h3 className="text-xl font-semibold mb-4">{category.title}</h3>
                     <div className="flex flex-wrap gap-2 justify-center">
                       {category.skills.map((skill) => (
-                        <Badge key={skill} variant="secondary" className="px-3 py-1">
+                        <Badge key={skill} variant="secondary" className="px-3 py-1 font-normal">
                           {skill}
                         </Badge>
                       ))}
@@ -136,13 +198,13 @@ export default function Skills() {
                     <div className="p-2 rounded-full bg-primary/10 mr-3">{tech.icon}</div>
                     <h4 className="text-lg font-semibold">{tech.category}</h4>
                   </div>
-                  <div className="grid grid-cols-3 gap-3">
+                  <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
                     {tech.items.map((item) => (
-                      <div key={item} className="flex flex-col items-center text-center">
+                      <div key={item.name} className="flex flex-col items-center text-center">
                         <div className="w-12 h-12 rounded-lg bg-muted flex items-center justify-center mb-2">
-                          <span className="text-xl font-bold text-primary">{item.charAt(0)}</span>
+                          {item.icon}
                         </div>
-                        <span className="text-xs text-muted-foreground">{item}</span>
+                        <span className="text-xs text-muted-foreground">{item.name}</span>
                       </div>
                     ))}
                   </div>

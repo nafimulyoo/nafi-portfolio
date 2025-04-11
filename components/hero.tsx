@@ -8,15 +8,62 @@ import MoleculeAnimation from "@/components/molecule-animation"
 
 export default function Hero() {
   const [mounted, setMounted] = useState(false)
+  const [currentTextIndex, setCurrentTextIndex] = useState(0)
+  const [currentText, setCurrentText] = useState("")
+  const [isDeleting, setIsDeleting] = useState(false)
+  const [typingSpeed, setTypingSpeed] = useState(150)
+
+  const texts = [
+    "Nafi Mulyo Kusumo",
+    "an AI & ML Enthusiast",
+    "a Lifelong Learner"
+  ]
+
+  // Function to render text with conditional coloring
+  const renderText = () => {
+    if (currentText.startsWith("an") || currentText.startsWith("a")) {
+      return (
+        <>
+          <span className="text-foreground">{currentText.substring(0, 2)}</span>
+          <span className="text-primary">{currentText.substring(2)}</span>
+        </>
+      )
+    }
+    return <span className="text-primary">{currentText}</span>
+  }
 
   useEffect(() => {
     setMounted(true)
-  }, [])
+    
+    const handleTyping = () => {
+      const current = currentTextIndex % texts.length
+      const fullText = texts[current]
+
+      if (isDeleting) {
+        setCurrentText(fullText.substring(0, currentText.length - 1))
+        setTypingSpeed(50)
+      } else {
+        setCurrentText(fullText.substring(0, currentText.length + 1))
+        setTypingSpeed(40)
+      }
+
+      if (!isDeleting && currentText === fullText) {
+        setTimeout(() => setIsDeleting(true), 5000)
+      } else if (isDeleting && currentText === "") {
+        setIsDeleting(false)
+        setCurrentTextIndex(currentTextIndex + 1)
+        setTypingSpeed(500)
+      }
+    }
+
+    const timer = setTimeout(handleTyping, typingSpeed)
+    return () => clearTimeout(timer)
+  }, [currentText, currentTextIndex, isDeleting, texts, typingSpeed])
 
   if (!mounted) return null
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center pt-12 overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <MoleculeAnimation />
       </div>
@@ -30,18 +77,21 @@ export default function Hero() {
             className="space-y-2"
           >
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
-              Hi, I'm <span className="text-primary">Nafi Mulyo Kusumo</span>
+              Hi, I'm {renderText()}<span className="animate-pulse font-thin">|</span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-[700px] mx-auto">
-              AI/ML Enthusiast | Data Intelligence Intern @ Astra International | Engineering Physics @ ITB
-            </p>
+            <div className="h-[60px]">
+              <p className="text-xl md:text-2xl text-muted-foreground max-w-[700px] mx-auto mt-4">
+               Data Intelligence Intern @ Astra International | Engineering Physics Undergraduate @ ITB | Building Intelligent Systems that Solve Real Problems
+              </p>
+            </div>
           </motion.div>
 
+          
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="flex flex-wrap justify-center gap-4"
+            className="flex flex-wrap justify-center gap-4 pt-10"
           >
             <Button size="lg" asChild>
               <a href="#projects">View My Work</a>

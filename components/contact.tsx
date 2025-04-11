@@ -24,45 +24,60 @@ export default function Contact() {
 
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitSuccess, setSubmitSuccess] = useState(false)
+  const [submitError, setSubmitError] = useState("")
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-
-    setIsSubmitting(false)
-    setSubmitSuccess(true)
-    setFormData({ name: "", email: "", subject: "", message: "" })
-
-    // Reset success message after 5 seconds
-    setTimeout(() => setSubmitSuccess(false), 5000)
+    setSubmitError("")
+  
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+  
+      if (!response.ok) {
+        throw new Error('Failed to send message')
+      }
+  
+      setSubmitSuccess(true)
+      setFormData({ name: "", email: "", subject: "", message: "" })
+      setTimeout(() => setSubmitSuccess(false), 5000)
+    } catch (error) {
+      console.error("Error sending email:", error)
+      setSubmitError("Failed to send message. Please try again later.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const contactInfo = [
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
-      content: "nafi.kusumo@example.com",
-      link: "mailto:nafi.kusumo@example.com",
+      content: "rxnafimulyo@gmail.com",
+      link: "mailto:rxnafimulyo@gmail.com",
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Phone",
-      content: "+62 812 3456 7890",
-      link: "tel:+6281234567890",
+      content: "+62 857 7979 6435",
+      link: "tel:+6285779796435",
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       title: "Location",
       content: "Bogor, West Java, Indonesia",
-      link: "https://maps.google.com",
+      link: "https://maps.google.com?q=Bogor,+West+Java,+Indonesia",
     },
   ]
 
@@ -146,9 +161,12 @@ export default function Contact() {
                   <Button type="submit" className="w-full" disabled={isSubmitting}>
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
-                  {submitSuccess && (
+                  {submitSuccess ? (
                     <p className="text-green-600 text-center">Your message has been sent successfully!</p>
-                  )}
+                  ) : (
+                      <p className="text-red-600 text-center">{submitError}</p>
+                  )
+                  }
                 </form>
               </CardContent>
             </Card>
@@ -160,26 +178,7 @@ export default function Contact() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="space-y-4"
           >
-            {contactInfo.map((item, index) => (
-              <Card key={index}>
-                <CardContent className="p-6 flex items-center space-x-4">
-                  <div className="p-3 rounded-full bg-primary/10">{item.icon}</div>
-                  <div>
-                    <h3 className="font-medium">{item.title}</h3>
-                    <a
-                      href={item.link}
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {item.content}
-                    </a>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-
-            <Card className="mt-8">
+            <Card className="">
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg mb-4">Connect With Me</h3>
                 <p className="text-muted-foreground mb-4">
@@ -241,6 +240,24 @@ export default function Contact() {
                 </div>
               </CardContent>
             </Card>
+            {contactInfo.map((item, index) => (
+              <Card key={index}>
+                <CardContent className="p-6 flex items-center space-x-4">
+                  <div className="p-3 rounded-full bg-primary/10">{item.icon}</div>
+                  <div>
+                    <h3 className="font-medium">{item.title}</h3>
+                    <a
+                      href={item.link}
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {item.content}
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </motion.div>
         </div>
       </div>

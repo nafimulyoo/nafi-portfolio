@@ -93,7 +93,7 @@ export default function Projects() {
     { value: "ai", label: "AI & ML" },
     { value: "data", label: "Data Science" },
     { value: "fullstack", label: "Full Stack" },
-    { value: "iot", label: "IoT & Embedded" },
+    // { value: "iot", label: "IoT & Embedded" },
   ]
 
   return (

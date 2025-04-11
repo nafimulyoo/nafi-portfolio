@@ -29,7 +29,6 @@ export default function Navbar() {
     { name: "Projects", href: "#projects" },
     { name: "Experience", href: "#experience" },
     { name: "Education", href: "#education" },
-    { name: "Contact", href: "#contact" },
   ]
 
   return (
@@ -40,8 +39,8 @@ export default function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold">
-          Nafi<span className="text-primary">Kusumo</span>
+        <Link href="/" className="text-2xl font-bold ml-4">
+          Nafi's <span className="text-primary">Portfolio</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -53,8 +52,8 @@ export default function Navbar() {
           ))}
           <ThemeToggle />
           <Button asChild>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-              Resume
+            <a href="#contact">
+              Contact
             </a>
           </Button>
         </nav>
@@ -83,9 +82,9 @@ export default function Navbar() {
               <span className="text-foreground/80">Toggle theme</span>
               <ThemeToggle />
             </div>
-            <Button className="w-full" asChild>
-              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                Resume
+            <Button className="w-full" onClick={toggleMenu} asChild>
+              <a href="#contact">
+                Contact
               </a>
             </Button>
           </nav>

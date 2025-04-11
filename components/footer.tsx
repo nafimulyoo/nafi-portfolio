@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-center space-y-4">
           <div className="flex items-center space-x-4">
             <Link href="/" className="text-2xl font-bold">
-              Nafi<span className="text-primary">Kusumo</span>
+              Nafi's <span className="text-primary">Portfolio</span>
             </Link>
           </div>
           <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4">

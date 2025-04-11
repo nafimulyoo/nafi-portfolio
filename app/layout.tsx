@@ -4,7 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata = {
   title: "Nafi Mulyo Kusumo | Portfolio",
-  description: "AI/ML Enthusiast | Data Intelligence Intern @ Astra International | Engineering Physics @ ITB",
+  description: "A & /ML Enthusiast | Data Intelligence Intern @ Astra International | Engineering Physics @ ITB",
     generator: 'v0.dev'
 }
 
