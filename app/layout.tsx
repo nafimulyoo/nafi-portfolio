@@ -5,8 +5,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 export const metadata = {
   title: "Nafi Mulyo Kusumo | Portfolio",
-  description: "A & /ML Enthusiast | Data Intelligence Intern @ Astra International | Engineering Physics @ ITB",
-    generator: 'v0.dev'
+  description: "AI & /ML Enthusiast | Data Intelligence Intern @ Astra International | Engineering Physics @ ITB",
 }
 
 export default function RootLayout({
@@ -16,6 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+      </head>
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange={false}>
           {children}
