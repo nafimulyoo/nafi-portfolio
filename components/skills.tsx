@@ -210,7 +210,7 @@ export default function Skills() {
         <h3 className="text-2xl font-bold text-center mb-8">Technologies & Tools</h3>
           
         <div>
-          <p className="text-muted-foreground text-center mb-12 max-w-[700px] items-center mx-auto">
+          <p className="text-muted-foreground text-center mb-12 max-w-[700px]">
             A comprehensive list of technologies and tools I have experience with. This includes programming languages, frameworks, libraries, and cloud services that I have worked with in various projects.
           </p>
         </div>

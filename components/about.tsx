@@ -18,7 +18,7 @@ export default function About() {
           <div className="w-20 h-1 bg-primary my-4 mt-6"></div>
         </div>
 
-        <div ref={ref} className="flex gap-12 mx-12 items-center flex-wrap">
+        <div ref={ref} className="flex gap-12 lg:mx-12 items-center flex-wrap">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}

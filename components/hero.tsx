@@ -69,7 +69,7 @@ export default function Hero() {
       </div>
       <div className="absolute inset-0 bg-grid-white/[0.02] -z-10" />
       <div className="container px-4 md:px-6 relative z-10">
-        <div className="flex flex-col items-center text-center space-y-8">
+        <div className="flex flex-col items-center text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -80,7 +80,7 @@ export default function Hero() {
             👋 Hi, I'm {renderText()}<span className="animate-pulse font-thin">|</span>
             </h1>
             <div className="h-[60px]">
-              <p className="sm:text-lg text-xl md:text-2xl text-muted-foreground max-w-[700px] mx-auto mt-4">
+              <p className="sm:text-xl md:text-xl lg:text-2xl text-muted-foreground max-w-[700px] mx-auto mt-4">
                Data Intelligence Intern @ Astra International | Engineering Physics Undergraduate @ ITB | Building Intelligent Systems that Solve Real Problems
               </p>
             </div>
@@ -91,7 +91,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
-            className="flex flex-wrap justify-center gap-4 pt-8"
+            className="flex flex-wrap justify-center gap-4 mt-16"
           >
             <Button size="lg" asChild>
               <a href="#projects">View My Work</a>
@@ -105,7 +105,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
-            className="flex items-center space-x-4"
+            className="flex items-center space-x-4 mt-8"
           >
             <a
               href="https://github.com/nafimulyoo"
