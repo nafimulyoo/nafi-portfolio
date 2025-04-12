@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Brain, Database, Code, Cpu, BarChart3, Layers, Cloud, Lightbulb } from "lucide-react"
+import { Brain, Database, Code, Cpu, BarChart3, Layers, Cloud, Lightbulb, Wind } from "lucide-react"
 import { 
   SiPython, SiJavascript, SiTypescript, SiC, SiCplusplus, SiKotlin, 
   SiPostgresql, SiMysql, SiMongodb, SiApachespark, SiApachekafka, 
@@ -12,16 +12,28 @@ import {
   SiTensorflow, SiPytorch, SiOpencv, SiHuggingface, SiFastapi,
   SiReact, SiNextdotjs, SiTailwindcss, SiLaravel, SiAndroidstudio,
   SiShadcnui,
-  SiPhp, 
+  SiPhp,
+  SiFigma,
+  SiKubernetes,
+  SiAwsamplify,
+  SiNetlify,
+  SiRedis,
+  SiSqlite,
+  SiSupabase,
+  SiScikitlearn,
+  SiApachehadoop,
+  SiTableau,
+  SiJupyter, 
 } from "react-icons/si"
 import { BsBarChartFill } from "react-icons/bs";
 import { IoLogoFirebase } from "react-icons/io5";
 import {  FaDatabase, FaGithub} from "react-icons/fa"
-import { TbBrandOpenai, TbBrandLaravel, TbApi, TbBrandMysql } from "react-icons/tb"
+import { TbBrandOpenai, TbBrandLaravel, TbApi, TbBrandMysql, TbWindmillFilled } from "react-icons/tb"
 import { MdDesignServices, MdDataThresholding } from "react-icons/md"
-import { GiArtificialIntelligence } from "react-icons/gi"
-import { BiLogoPostgresql } from "react-icons/bi";
+import { GiArtificialIntelligence, GiTurbine, GiWindmill } from "react-icons/gi"
+import { BiLogoFigma, BiLogoPostgresql } from "react-icons/bi";
 import { LuBrainCircuit } from "react-icons/lu";
+import { CgFigma } from "react-icons/cg"
 
 export default function Skills() {
   const { ref, inView } = useInView({
@@ -35,23 +47,26 @@ export default function Skills() {
       icon: <Brain className="h-8 w-8 text-primary" />,
       skills: [
         "Deep Learning",
-        "Computer Vision", 
-        "Natural Language Processing",
-        "Generative AI",
+        "Diffusion Models",
         "Large Language Models",
+        "Model Context Protocol",
+        "Retrieval-Augmented Generation",
+        "Computer Vision", 
         "Reinforcement Learning",
       ],
     },
     {
-      title: "Data Science & Engineering",
+      title: "Data Analytics & Engineering",
       icon: <BarChart3 className="h-8 w-8 text-primary" />,
       skills: [
         "Data Analysis",
         "Statistical Modeling",
+        "Forecasting",
+        "Data Mining",
         "Data Visualization",
         "Big Data Processing",
         "ETL Pipelines",
-        "Cloud Data Systems"
+        "Data Warehousing",
       ],
     },
     {
@@ -63,12 +78,53 @@ export default function Skills() {
         "Mobile Development",
         "Database Design",
         "API Development",
-        "DevOps Integration"
+        "UI/UX Design",
+        "DevOps Integration",
       ],
     },
   ]
 
   const technologies = [
+    {
+      category: "AI & Machine Learning",
+      icon: <Brain className="h-6 w-6 text-primary" />,
+      items: [
+        { name: "TensorFlow", icon: <SiTensorflow className="w-6 h-6 text-foreground/80" /> },
+        { name: "PyTorch", icon: <SiPytorch className="w-6 h-6 text-foreground/80" /> },
+        { name: "LLMs", icon: <TbBrandOpenai className="w-6 h-6 text-foreground/80" /> },
+        { name: "OpenCV", icon: <SiOpencv className="w-6 h-6 text-foreground/80" /> },
+        { name: "Gymnasium", icon: <SiPython className="w-6 h-6 text-foreground/80" /> },
+        { name: "Scikit-learn", icon: <SiScikitlearn className="w-6 h-6 text-foreground/80" /> },
+        { name: "Vertex AI", icon: <Brain className="w-6 h-6 text-foreground/80" /> },
+        { name: "HuggingFace", icon: <SiHuggingface className="w-6 h-6 text-foreground/80" /> },
+      ],
+    },
+    {
+      category: "Data Analytics & Engineering",
+      icon: <Database className="h-6 w-6 text-primary" />,
+      items: [
+        { name: "Jupyter", icon: <SiJupyter className="w-6 h-6 text-foreground/80" /> },
+        { name: "Power BI", icon: <BsBarChartFill className="w-6 h-6 text-foreground/80" /> },
+        { name: "Tableau", icon: <SiTableau className="w-6 h-6 text-foreground/80" /> },
+        { name: "Apache Airflow", icon: <TbWindmillFilled className="w-6 h-6 text-foreground/80" /> },
+        { name: "Apache Spark", icon: <SiApachespark className="w-6 h-6 text-foreground/80" /> },
+        { name: "Apache Kafka", icon: <SiApachekafka className="w-6 h-6 text-foreground/80" /> },
+      ],
+    },
+    {
+      category: "Full-Stack Development",
+      icon: <Layers className="h-6 w-6 text-primary" />,
+      items: [
+        { name: "Next.js", icon: <SiNextdotjs className="w-6 h-6 text-foreground/80" /> },
+        { name: "React", icon: <SiReact className="w-6 h-6 text-foreground/80" /> },
+        { name: "Shadcn/ui", icon: <SiShadcnui className="w-6 h-6 text-foreground/80" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss className="w-6 h-6 text-foreground/80" /> },
+        { name: "Laravel", icon: <TbBrandLaravel className="w-6 h-6 text-foreground/80" /> },
+        { name: "FastAPI", icon: <SiFastapi className="w-6 h-6 text-foreground/80" /> },
+        { name: "Android Studio", icon: <SiAndroidstudio className="w-6 h-6 text-foreground/80" /> },
+        { name: "Figma", icon: <CgFigma className="w-6 h-6 text-foreground/80" /> },
+      ],
+    },
     {
       category: "Languages",
       icon: <Code className="h-6 w-6 text-primary" />,
@@ -84,68 +140,31 @@ export default function Skills() {
       ],
     },
     {
-      category: "AI/ML & Data Science",
-      icon: <Brain className="h-6 w-6 text-primary" />,
-      items: [
-        { name: "TensorFlow", icon: <SiTensorflow className="w-6 h-6 text-foreground/80" /> },
-        { name: "PyTorch", icon: <SiPytorch className="w-6 h-6 text-foreground/80" /> },
-        { name: "LLMs", icon: <TbBrandOpenai className="w-6 h-6 text-foreground/80" /> },
-        { name: "OpenCV", icon: <SiOpencv className="w-6 h-6 text-foreground/80" /> },
-        { name: "Gymnasium", icon: <SiPython className="w-6 h-6 text-foreground/80" /> },
-        { name: "Scikit-learn", icon: <SiPython className="w-6 h-6 text-foreground/80" /> },
-        { name: "Power BI", icon: <BsBarChartFill className="w-6 h-6 text-foreground/80" /> },
-        { name: "HuggingFace", icon: <SiHuggingface className="w-6 h-6 text-foreground/80" /> },
-      ],
-    },
-    {
-      category: "Full-Stack Development",
-      icon: <Layers className="h-6 w-6 text-primary" />,
-      items: [
-        { name: "Next.js", icon: <SiNextdotjs className="w-6 h-6 text-foreground/80" /> },
-        { name: "React", icon: <SiReact className="w-6 h-6 text-foreground/80" /> },
-        { name: "Shadcn/ui", icon: <SiShadcnui className="w-6 h-6 text-foreground/80" /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss className="w-6 h-6 text-foreground/80" /> },
-        { name: "Laravel", icon: <TbBrandLaravel className="w-6 h-6 text-foreground/80" /> },
-        { name: "FastAPI", icon: <SiFastapi className="w-6 h-6 text-foreground/80" /> },
-        { name: "Android Studio", icon: <SiAndroidstudio className="w-6 h-6 text-foreground/80" /> },
-      ],
-    },
-    {
       category: "Cloud & DevOps",
       icon: <Cloud className="h-6 w-6 text-primary" />,
       items: [
         { name: "GCP", icon: <SiGooglecloud className="w-6 h-6 text-foreground/80" /> },
-        { name: "Vertex AI", icon: <Brain className="w-6 h-6 text-foreground/80" /> },
-        { name: "BigQuery", icon: <SiGooglecloud className="w-6 h-6 text-foreground/80" /> },
-        { name: "Docker", icon: <SiDocker className="w-6 h-6 text-foreground/80" /> },
-        { name: "GitHub Actions", icon: <FaGithub className="w-6 h-6 text-foreground/80" /> },
+        { name: "AWS", icon: <SiAwsamplify className="w-6 h-6 text-foreground/80" /> },
         { name: "Firebase", icon: <IoLogoFirebase className="w-6 h-6 text-foreground/80" /> },
         { name: "Vercel", icon: <SiVercel className="w-6 h-6 text-foreground/80" /> },
+        { name: "Netlify", icon: <SiNetlify className="w-6 h-6 text-foreground/80" /> },
+        { name: "GitHub Actions", icon: <FaGithub className="w-6 h-6 text-foreground/80" /> },
+        { name: "Docker", icon: <SiDocker className="w-6 h-6 text-foreground/80" /> },
+        { name: "Kubernetes", icon: <SiKubernetes className="w-6 h-6 text-foreground/80" /> },
       ],
     },
     {
-      category: "Data Engineering",
+      category: "Databases",
       icon: <Database className="h-6 w-6 text-primary" />,
       items: [
         { name: "PostgreSQL", icon: <BiLogoPostgresql className="w-6 h-6 text-foreground/80" /> },
         { name: "MySQL", icon: <TbBrandMysql className="w-6 h-6 text-foreground/80" /> },
         { name: "MongoDB", icon: <SiMongodb className="w-6 h-6 text-foreground/80" /> },
-        { name: "Apache Spark", icon: <SiApachespark className="w-6 h-6 text-foreground/80" /> },
-        { name: "Airflow", icon: <MdDataThresholding className="w-6 h-6 text-foreground/80" /> },
-        { name: "Kafka", icon: <SiApachekafka className="w-6 h-6 text-foreground/80" /> },
-        { name: "BigQuery", icon: <SiGooglecloud className="w-6 h-6 text-foreground/80" /> },
-      ],
-    },
-    {
-      category: "Methodologies",
-      icon: <Lightbulb className="h-6 w-6 text-primary" />,
-      items: [
-        { name: "Agile", icon: <Lightbulb className="w-6 h-6 text-foreground/80" /> },
-        { name: "MLOps", icon: <Brain className="w-6 h-6 text-foreground/80" /> },
-        { name: "Data Pipelines", icon: <MdDataThresholding className="w-6 h-6 text-foreground/80" /> },
-        { name: "Test-Driven Development", icon: <Code className="w-6 h-6 text-foreground/80" /> },
-        { name: "Design Thinking", icon: <MdDesignServices className="w-6 h-6 text-foreground/80" /> },
-        { name: "Microservices", icon: <TbApi className="w-6 h-6 text-foreground/80" /> },
+        { name: "Redis", icon: <SiRedis className="w-6 h-6 text-foreground/80" /> },
+        { name: "Firebase RTDB", icon: <IoLogoFirebase className="w-6 h-6 text-foreground/80" /> },
+        { name: "Firebase Firestore", icon: <IoLogoFirebase className="w-6 h-6 text-foreground/80" /> },
+        { name: "Supabase", icon: <SiSupabase className="w-6 h-6 text-foreground/80" /> },
+        { name: "SQLite", icon: <SiSqlite className="w-6 h-6 text-foreground/80" /> },
       ],
     },
   ];
@@ -157,7 +176,7 @@ export default function Skills() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">🛠️ My Skills</h2>
           <div className="w-20 h-1 bg-primary my-4 mt-6"></div>
           <p className="text-muted-foreground max-w-[700px]">
-            I specialize in these core areas, combining technical expertise with practical problem-solving
+            I specialize in AI, data analytics, and full-stack development. I am always eager to learn and adapt to new technologies, ensuring that I stay at the forefront of the ever-evolving tech landscape.
           </p>
         </div>
 
@@ -189,6 +208,12 @@ export default function Skills() {
         </div>
 
         <h3 className="text-2xl font-bold text-center mb-8">Technologies & Tools</h3>
+          
+        <div>
+          <p className="text-muted-foreground text-center mb-12 max-w-[700px] items-center mx-auto">
+            A comprehensive list of technologies and tools I have experience with. This includes programming languages, frameworks, libraries, and cloud services that I have worked with in various projects.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {technologies.map((tech, index) => (

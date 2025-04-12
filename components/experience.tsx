@@ -18,7 +18,7 @@ export default function Experience() {
       company: "PT Astra International Tbk",
       location: "Jakarta, Indonesia",
       period: "Mar 2025 - Present",
-      description: "Working on data science and data strategies projects at one of Indonesia's largest conglomerates, focusing on Large Language Models and data product development.",
+      description: "Working on data product and data strategies projects at one of Indonesia's largest conglomerates, focusing on Large Language Models and data product development.",
       skills: ["Large Language Models", "Data Science", "Data Strategies", "Data Product"],
       type: "Internship",
       logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEM6oE-kYjm-A/company-logo_200_200/company-logo_200_200/0/1631319377177?e=1749686400&v=beta&t=Ngy8tOWLMND6LrGF41s5UbaKJxFGF_27lqDMCZ_qiJI",
@@ -87,7 +87,7 @@ export default function Experience() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">💼 Experience</h2>
           <div className="w-20 h-1 bg-primary my-4 mt-6"></div>
           <p className="text-muted-foreground max-w-[700px]">
-            My professional journey has been a blend of internships. Each experience has deepened my understanding of technology's role in solving real-world challenges.
+            Hands-on experience at industry leaders and startups. Each experience has deepened my understanding of technology's role in solving real-world challenges.
           </p>
         </div>
 

@@ -65,7 +65,7 @@ export default function Footer() {
           </div>
           <div className="text-center text-sm text-muted-foreground">
             <p>© {currentYear} Nafi Mulyo Kusumo. All rights reserved.</p>
-            <p className="mt-1">Building Intelligent Systems that Solve Real Problems</p>
+            <p className="mt-1">Built with Next.js, React, Shadcn/ui, and Tailwind CSS</p>
           </div>
         </div>
       </div>
