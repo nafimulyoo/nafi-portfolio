@@ -76,11 +76,11 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="space-y-2"
           >
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
             👋 Hi, I'm {renderText()}<span className="animate-pulse font-thin">|</span>
             </h1>
             <div className="h-[60px]">
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-[700px] mx-auto mt-4">
+              <p className="sm:text-lg text-xl md:text-2xl text-muted-foreground max-w-[700px] mx-auto mt-4">
                Data Intelligence Intern @ Astra International | Engineering Physics Undergraduate @ ITB | Building Intelligent Systems that Solve Real Problems
               </p>
             </div>
