@@ -53,7 +53,7 @@ export default function About() {
                 </div>
                 </div>
                 <p className="text-muted-foreground mt-2">
-                  Open to collaborations, internships, or just geeking out over the latest in tech!
+                  Open to collaborations, projects, or just geeking out over the latest in tech!
                 </p>
                 </CardContent>
               </Card>

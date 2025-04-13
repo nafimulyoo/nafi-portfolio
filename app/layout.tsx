@@ -6,7 +6,11 @@ import { Analytics } from "@vercel/analytics/react"
 export const metadata = {
   title: "Nafi Mulyo Kusumo | Portfolio",
   description: "AI & /ML Enthusiast | Data Intelligence Intern @ Astra International | Engineering Physics @ ITB",
+  icons: {
+    icon: "/favicon.ico",
+  }
 }
+
 
 export default function RootLayout({
   children,
@@ -17,7 +21,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="favicon.ico" />
       </head>
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange={false}>
@@ -31,3 +35,4 @@ export default function RootLayout({
 
 
 import './globals.css'
+import { icons } from "lucide-react"
