@@ -21,7 +21,7 @@ export default function Experience() {
       description: "Working on data product and data strategies projects at one of Indonesia's largest conglomerates, focusing on Large Language Models and data product development.",
       skills: ["Large Language Models", "Data Science", "Data Strategies", "Data Product"],
       type: "Internship",
-      logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEM6oE-kYjm-A/company-logo_200_200/company-logo_200_200/0/1631319377177?e=1749686400&v=beta&t=Ngy8tOWLMND6LrGF41s5UbaKJxFGF_27lqDMCZ_qiJI",
+      logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEM6oE-kYjm-A/company-logo_200_200/company-logo_200_200/0/1631319377177?e=1756339200&v=beta&t=F__RfbPHGSswG4Vdl2UYv1ATOHV_yZaj6lqS4_6x0rE",
     },
     // {
     //   title: "Engineering Data Science Lecturing Assistant",
@@ -43,7 +43,7 @@ export default function Experience() {
         "Conducted a study of the PLC Emergency Shutdown System (ESD) at RU IV Cilacap, focusing on enhancing system reliability and performance. Analyzed root causes of module failures, explored channel segregation between RFCC and GTO units, and proposed solutions to improve system availability.",
       skills: ["Industrial Control System", "Safety Instrumented Systems", "Programmable Logic Controller (PLC)", "Reliability Engineering"],
       type: "Internship",
-      logo: "https://media.licdn.com/dms/image/v2/C510BAQGE-Idze3oUkA/company-logo_200_200/company-logo_200_200/0/1630602806622?e=1749686400&v=beta&t=XpMWa_py6PRN_TL_5cWu_DKPeNBmUBQpv_kPSmzoMG4",
+      logo: "https://media.licdn.com/dms/image/v2/C510BAQGE-Idze3oUkA/company-logo_200_200/company-logo_200_200/0/1630602806622?e=1756339200&v=beta&t=p8-K240inF3Yf74xCNo1TVAlKfnlVKojLdtVvuGDNJM",
     },
     {
       title: "IoT Engineer Intern",
@@ -54,7 +54,7 @@ export default function Experience() {
         "Specialized in the development and optimization of sensor-based systems for agricultural applications. Developed scheduling systems for climate chambers, established sensor calibration processes, and designed systems for accurate data transmission between devices and gateways.",
       skills: ["Arduino", "C++", "Electronics", "Internet of Things"],
       type: "Internship",
-      logo: "https://media.licdn.com/dms/image/v2/C560BAQGaDU7oTWTx2w/company-logo_200_200/company-logo_200_200/0/1645127224563/elevarm_logo?e=1749686400&v=beta&t=Qj2EDGUBZBV8Rj2qcF0I9W0VHfC-fe1BH6BdRM4M2B4",
+      logo: "https://media.licdn.com/dms/image/v2/C560BAQGaDU7oTWTx2w/company-logo_200_200/company-logo_200_200/0/1645127224563/elevarm_logo?e=1756339200&v=beta&t=HcJ04Nnb8Gxe88uxjSs_FFpgyfB5fWzNvltOffg69HA",
     },
     // {
     //   title: "Engineering Physics Laboratory II Teaching Assistant",
@@ -76,7 +76,7 @@ export default function Experience() {
         "Worked on the development of an LLM-based query system for a large-scale database, focusing on enhancing data retrieval and user interaction.",
       skills: ["Large Language Models", "FastAPI", "Next.js", "React"],
       type: "Internship",
-      logo: "https://media.licdn.com/dms/image/v2/C510BAQHA4HeAkK_YKg/company-logo_200_200/company-logo_200_200/0/1630592338936?e=1749686400&v=beta&t=G3p57EbGYspO0xHFfRhRfTbnEGH4IgAHZ__dfp5B430"
+      logo: "https://media.licdn.com/dms/image/v2/C510BAQHA4HeAkK_YKg/company-logo_200_200/company-logo_200_200/0/1630592338936?e=1756339200&v=beta&t=LBv4pwizPNSEkxbrF8ZU3TRAnx1ZZkG1edERKe-qdbQ"
     }
   ]
 
