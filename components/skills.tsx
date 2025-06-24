@@ -64,9 +64,9 @@ export default function Skills() {
         "Forecasting",
         "Data Mining",
         "Data Visualization",
-        "Big Data Processing",
-        "ETL Pipelines",
-        "Data Warehousing",
+        // "Big Data Processing",
+        // "ETL Pipelines",
+        // "Data Warehousing",
       ],
     },
     {
@@ -101,14 +101,15 @@ export default function Skills() {
     },
     {
       category: "Data Analytics & Engineering",
+      // category: "Data Analytics & Engineering",
       icon: <Database className="h-6 w-6 text-primary" />,
       items: [
         { name: "Jupyter", icon: <SiJupyter className="w-6 h-6 text-foreground/80" /> },
         { name: "Power BI", icon: <BsBarChartFill className="w-6 h-6 text-foreground/80" /> },
         { name: "Tableau", icon: <SiTableau className="w-6 h-6 text-foreground/80" /> },
-        { name: "Apache Airflow", icon: <TbWindmillFilled className="w-6 h-6 text-foreground/80" /> },
-        { name: "Apache Spark", icon: <SiApachespark className="w-6 h-6 text-foreground/80" /> },
-        { name: "Apache Kafka", icon: <SiApachekafka className="w-6 h-6 text-foreground/80" /> },
+        // { name: "Apache Airflow", icon: <TbWindmillFilled className="w-6 h-6 text-foreground/80" /> },
+        // { name: "Apache Spark", icon: <SiApachespark className="w-6 h-6 text-foreground/80" /> },
+        // { name: "Apache Kafka", icon: <SiApachekafka className="w-6 h-6 text-foreground/80" /> },
       ],
     },
     {
@@ -144,13 +145,13 @@ export default function Skills() {
       icon: <Cloud className="h-6 w-6 text-primary" />,
       items: [
         { name: "GCP", icon: <SiGooglecloud className="w-6 h-6 text-foreground/80" /> },
-        { name: "AWS", icon: <SiAwsamplify className="w-6 h-6 text-foreground/80" /> },
+        // { name: "AWS", icon: <SiAwsamplify className="w-6 h-6 text-foreground/80" /> },
         { name: "Firebase", icon: <IoLogoFirebase className="w-6 h-6 text-foreground/80" /> },
         { name: "Vercel", icon: <SiVercel className="w-6 h-6 text-foreground/80" /> },
         { name: "Netlify", icon: <SiNetlify className="w-6 h-6 text-foreground/80" /> },
-        { name: "GitHub Actions", icon: <FaGithub className="w-6 h-6 text-foreground/80" /> },
+        // { name: "GitHub Actions", icon: <FaGithub className="w-6 h-6 text-foreground/80" /> },
         { name: "Docker", icon: <SiDocker className="w-6 h-6 text-foreground/80" /> },
-        { name: "Kubernetes", icon: <SiKubernetes className="w-6 h-6 text-foreground/80" /> },
+        // { name: "Kubernetes", icon: <SiKubernetes className="w-6 h-6 text-foreground/80" /> },
       ],
     },
     {
