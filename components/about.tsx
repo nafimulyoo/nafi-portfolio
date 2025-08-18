@@ -28,10 +28,8 @@ export default function About() {
              <Card className="">
                 <CardContent className="p-6">
                   <p className="text-muted-foreground">
-                    Hi, I'm <span className="font-bold">Nafi</span>, I'm passionate about solving real-world problems by building cutting-edge AI solutions that
-                    matter. I've had the chance to work on diverse projects, from LLM-based learning tools to smart IoT
-                    systems—and each experience has strengthened my belief that great tech is born where research meets
-                    usability.
+                    Hi! I'm <span className="font-bold">Nafi</span> 👋
+                    I{"’"}m an Aspiring AI Engineer passionate about building intelligent systems that combine Large Language Models (LLMs), multi-agent workflows, and RAG pipelines to solve real-world problems. My experience spans from developing AI-powered chatbots and lead generation systems at Astra International to creating ElisaAI, a multi-agent LLM system integrated with ITB{"’"}s energy monitoring platform, enabling natural language queries.
                   </p>
                 </CardContent>
             </Card>
@@ -43,13 +41,16 @@ export default function About() {
                 </p>
                 <div className="mt-2">
                 <div className="flex ml-4 text-muted-foreground">
-                  <span className="font-semibold">🚀</span><p className="ml-2"><span className="font-semibold"> AI for Good </span>– Leveraging LLMs, computer vision, and reinforcement learning for industrial and societal impact.</p>
+                  <span className="font-semibold">🚀</span><p className="ml-2">Building with LLMs, multi-agent systems, and RAG</p>
                 </div>
                 <div className="flex ml-4 text-muted-foreground">
-                  <span className="font-semibold">⚡</span><p className="ml-2"><span className="font-semibold"> Sustainable Tech</span> – Smart energy, IoT, and AI-driven solutions for a greener future.</p>
+                  <span className="font-semibold">⚡</span><p className="ml-2">Smart energy management and sustainable tech</p>
                 </div>
                 <div className="flex ml-4 text-muted-foreground">
-                  <span className="font-semibold">🔧</span><p className="ml-2"><span className="font-semibold"> Full-Stack Innovation</span> - Cross-disciplinary product innovation and development, from embedded systems to scalable web apps,</p>
+                  <span className="font-semibold">🔧</span><p className="ml-2">Full-stack AI applications (backend + frontend)</p>
+                </div>
+                <div className="flex ml-4 text-muted-foreground">
+                  <span className="font-semibold">💡</span><p className="ml-2">Exploring the future of AI-driven products</p>
                 </div>
                 </div>
                 <p className="text-muted-foreground mt-2">

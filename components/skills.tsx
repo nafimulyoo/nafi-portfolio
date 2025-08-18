@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer"
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Brain, Database, Code, Cpu, BarChart3, Layers, Cloud, Lightbulb, Wind } from "lucide-react"
+import { Brain, Database, Code, Cpu, BarChart3, Layers, Cloud, Lightbulb, Wind, Link, Network, Component } from "lucide-react"
 import { 
   SiPython, SiJavascript, SiTypescript, SiC, SiCplusplus, SiKotlin, 
   SiPostgresql, SiMysql, SiMongodb, SiApachespark, SiApachekafka, 
@@ -23,7 +23,9 @@ import {
   SiScikitlearn,
   SiApachehadoop,
   SiTableau,
-  SiJupyter, 
+  SiJupyter,
+  SiOllama,
+  SiStreamlit, 
 } from "react-icons/si"
 import { BsBarChartFill } from "react-icons/bs";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -31,6 +33,7 @@ import {  FaDatabase, FaGithub} from "react-icons/fa"
 import { TbBrandOpenai, TbBrandLaravel, TbApi, TbBrandMysql, TbWindmillFilled } from "react-icons/tb"
 import { MdDesignServices, MdDataThresholding } from "react-icons/md"
 import { GiArtificialIntelligence, GiTurbine, GiWindmill } from "react-icons/gi"
+import { RiFileExcel2Fill } from "react-icons/ri"
 import { BiLogoFigma, BiLogoPostgresql } from "react-icons/bi";
 import { LuBrainCircuit } from "react-icons/lu";
 import { CgFigma } from "react-icons/cg"
@@ -43,30 +46,27 @@ export default function Skills() {
 
   const skillCategories = [
     {
-      title: "AI & Machine Learning",
+      title: "AI Engineering",
       icon: <Brain className="h-8 w-8 text-primary" />,
       skills: [
-        "Deep Learning",
-        "Diffusion Models",
         "Large Language Models",
+        "Multi-Agent Systems",
         "Model Context Protocol",
         "Retrieval-Augmented Generation",
-        "Computer Vision", 
-        "Reinforcement Learning",
+        "Model Training & Fine-Tuning", 
+        "AI Product Development",
       ],
     },
     {
-      title: "Data Analytics & Engineering",
+      title: "Data Science",
       icon: <BarChart3 className="h-8 w-8 text-primary" />,
       skills: [
         "Data Analysis",
-        "Statistical Modeling",
-        "Forecasting",
-        "Data Mining",
         "Data Visualization",
-        // "Big Data Processing",
-        // "ETL Pipelines",
-        // "Data Warehousing",
+        "Statistical Modeling",
+        "Machine Learning",
+        "Deep Learning",
+        "Data Mining",
       ],
     },
     {
@@ -86,27 +86,32 @@ export default function Skills() {
 
   const technologies = [
     {
-      category: "AI & Machine Learning",
+      category: "AI Engineering",
       icon: <Brain className="h-6 w-6 text-primary" />,
       items: [
-        { name: "TensorFlow", icon: <SiTensorflow className="w-6 h-6 text-foreground/80" /> },
-        { name: "PyTorch", icon: <SiPytorch className="w-6 h-6 text-foreground/80" /> },
         { name: "LLMs", icon: <TbBrandOpenai className="w-6 h-6 text-foreground/80" /> },
-        { name: "OpenCV", icon: <SiOpencv className="w-6 h-6 text-foreground/80" /> },
-        { name: "Gymnasium", icon: <SiPython className="w-6 h-6 text-foreground/80" /> },
-        { name: "Scikit-learn", icon: <SiScikitlearn className="w-6 h-6 text-foreground/80" /> },
+        { name: "LangChain", icon: <Link className="w-6 h-6 text-foreground/80" /> },
+        { name: "LangGraph", icon: <Network className="w-6 h-6 text-foreground/80" /> },
+        { name: "MetaGPT", icon: <Component className="w-6 h-6 text-foreground/80" /> },
+        { name: "LlamaIndex", icon: <SiOllama className="w-6 h-6 text-foreground/80" /> },
         { name: "Vertex AI", icon: <Brain className="w-6 h-6 text-foreground/80" /> },
+        { name: "Ollama", icon: <SiOllama className="w-6 h-6 text-foreground/80" /> },
         { name: "HuggingFace", icon: <SiHuggingface className="w-6 h-6 text-foreground/80" /> },
       ],
     },
     {
-      category: "Data Analytics & Engineering",
+      category: "Data Science & Machine Learning",
       // category: "Data Analytics & Engineering",
       icon: <Database className="h-6 w-6 text-primary" />,
       items: [
-        { name: "Jupyter", icon: <SiJupyter className="w-6 h-6 text-foreground/80" /> },
+        { name: "Scikit-Learn", icon: <SiScikitlearn className="w-6 h-6 text-foreground/80" /> },
+        { name: "TensorFlow", icon: <SiTensorflow className="w-6 h-6 text-foreground/80" /> },
+        { name: "PyTorch", icon: <SiPytorch className="w-6 h-6 text-foreground/80" /> },
+        { name: "OpenCV", icon: <SiOpencv className="w-6 h-6 text-foreground/80" /> },
+        { name: "Streamlit", icon: <SiStreamlit className="w-6 h-6 text-foreground/80" /> },
         { name: "Power BI", icon: <BsBarChartFill className="w-6 h-6 text-foreground/80" /> },
         { name: "Tableau", icon: <SiTableau className="w-6 h-6 text-foreground/80" /> },
+        { name: "Excel", icon: <RiFileExcel2Fill className="w-6 h-6 text-foreground/80" /> },
         // { name: "Apache Airflow", icon: <TbWindmillFilled className="w-6 h-6 text-foreground/80" /> },
         // { name: "Apache Spark", icon: <SiApachespark className="w-6 h-6 text-foreground/80" /> },
         // { name: "Apache Kafka", icon: <SiApachekafka className="w-6 h-6 text-foreground/80" /> },
@@ -177,7 +182,7 @@ export default function Skills() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">🛠️ My Skills</h2>
           <div className="w-20 h-1 bg-primary my-4 mt-6"></div>
           <p className="text-muted-foreground max-w-[700px]">
-            I specialize in AI, data analytics, and full-stack development. I am always eager to learn and adapt to new technologies, ensuring that I stay at the forefront of the ever-evolving tech landscape.
+            I specialize in AI Engineering, Data Science, and Full-Stack Development. I am always eager to learn and adapt to new technologies, ensuring that I stay at the forefront of the ever-evolving tech landscape.
           </p>
         </div>
 

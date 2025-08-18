@@ -17,30 +17,26 @@ export default function Experience() {
       title: "Data Intelligence Intern",
       company: "PT Astra International Tbk",
       location: "Jakarta, Indonesia",
-      period: "Mar 2025 - Present",
-      description: "Working on data product and data strategies projects at one of Indonesia's largest conglomerates, focusing on Large Language Models and data product development.",
+      period: "Mar 2025 - May 2025",
+      description: [
+        "Designed and implemented a leads generation and analysis system using an LLM and automated data retrieval to increase lead accuracy and efficiency.",
+        "Directed the design and implementation of an internal chatbot powered by Vertex AI and a RAG module. This solution indexed and retrieved company-managed data (e.g., products, services, and portfolios)."
+      ],
       skills: ["Large Language Models", "Data Science", "Data Strategies", "Data Product"],
       type: "Internship",
       logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEM6oE-kYjm-A/company-logo_200_200/company-logo_200_200/0/1631319377177?e=1756339200&v=beta&t=F__RfbPHGSswG4Vdl2UYv1ATOHV_yZaj6lqS4_6x0rE",
     },
-    // {
-    //   title: "Engineering Data Science Lecturing Assistant",
-    //   company: "Institut Teknologi Bandung",
-    //   location: "Bandung, Indonesia",
-    //   period: "Jan 2025 - Present",
-    //   description:
-    //     "Assisting undergraduate students in learning data science concepts and techniques for engineering applications.",
-    //   skills: ["Python", "Data Science", "Teaching"],
-    //   type: "Part-time",
-    //   logo: "https://media.licdn.com/dms/image/v2/C560BAQGJoYkUiQpUKA/company-logo_200_200/company-logo_200_200/0/1630672186443/itb_logo?e=1749686400&v=beta&t=znGpwuOkZeiCFFchL9mhpLKCjZJibQ0XGZCkKPK84bU",
-    // },
     {
       title: "Instrument Inspection Engineer Intern",
       company: "PT Kilang Pertamina Internasional",
       location: "Cilacap, Central Java, Indonesia",
       period: "Jul 2024 - Aug 2024",
       description:
-        "Conducted a study of the PLC Emergency Shutdown System (ESD) at RU IV Cilacap, focusing on enhancing system reliability and performance. Analyzed root causes of module failures, explored channel segregation between RFCC and GTO units, and proposed solutions to improve system availability.",
+      [
+        "Conducted a study on the Emergency Shutdown (ESD) system to improve reliability and safety.",
+        "Diagnosed the causes of the RFCC and GTO refinery shutdowns that occurred on January 30, 2023, at RU IV Cilacap.",
+        "Formulated and evaluated solutions to enhance reliability and safety to prevent future shutdown incidents."
+      ],
       skills: ["Industrial Control System", "Safety Instrumented Systems", "Programmable Logic Controller (PLC)", "Reliability Engineering"],
       type: "Internship",
       logo: "https://media.licdn.com/dms/image/v2/C510BAQGE-Idze3oUkA/company-logo_200_200/company-logo_200_200/0/1630602806622?e=1756339200&v=beta&t=p8-K240inF3Yf74xCNo1TVAlKfnlVKojLdtVvuGDNJM",
@@ -50,30 +46,24 @@ export default function Experience() {
       company: "Elevarm",
       location: "Bandung, West Java, Indonesia",
       period: "Mar 2024 - Jul 2024",
-      description:
-        "Specialized in the development and optimization of sensor-based systems for agricultural applications. Developed scheduling systems for climate chambers, established sensor calibration processes, and designed systems for accurate data transmission between devices and gateways.",
+      description: [
+        "Developed an IoT-based air and soil monitoring system for agricultural applications.",
+        "Designed and implemented an accurate data transmission system between devices and the gateway.",
+        "Developed a Device Manager application for IoT network and data configuration."
+      ],
       skills: ["Arduino", "C++", "Electronics", "Internet of Things"],
       type: "Internship",
       logo: "https://media.licdn.com/dms/image/v2/C560BAQGaDU7oTWTx2w/company-logo_200_200/company-logo_200_200/0/1645127224563/elevarm_logo?e=1756339200&v=beta&t=HcJ04Nnb8Gxe88uxjSs_FFpgyfB5fWzNvltOffg69HA",
     },
-    // {
-    //   title: "Engineering Physics Laboratory II Teaching Assistant",
-    //   company: "Institut Teknologi Bandung",
-    //   location: "Bandung, Indonesia",
-    //   period: "Jan 2024 - Jun 2024",
-    //   description:
-    //     "Guided and supervised laboratory students in learning Arduino and C++ for ESP32 microcontroller modules, as well as Android development with Kotlin for IoT applications.",
-    //   skills: ["Arduino", "C++", "Electronics", "Kotlin", "Android"],
-    //   type: "Part-time",
-    //   logo: "https://media.licdn.com/dms/image/v2/C560BAQGJoYkUiQpUKA/company-logo_200_200/company-logo_200_200/0/1630672186443/itb_logo?e=1749686400&v=beta&t=znGpwuOkZeiCFFchL9mhpLKCjZJibQ0XGZCkKPK84bU",
-    // },
     {
-      title: "Large Language Model Engineer Intern",
+      title: "AI Engineer Intern",
       company: "Javatech Automation",
       location: "Remote",
       period: "Jan 2024 - Mar 2024",
-      description:
-        "Worked on the development of an LLM-based query system for a large-scale database, focusing on enhancing data retrieval and user interaction.",
+      description: [
+        "Developed algorithms for natural language processing using LangChain and OpenAI for easier data querying.",
+        "Created an IoT data dashboard integrated with natural language processing."
+      ],
       skills: ["Large Language Models", "FastAPI", "Next.js", "React"],
       type: "Internship",
       logo: "https://media.licdn.com/dms/image/v2/C510BAQHA4HeAkK_YKg/company-logo_200_200/company-logo_200_200/0/1630592338936?e=1756339200&v=beta&t=LBv4pwizPNSEkxbrF8ZU3TRAnx1ZZkG1edERKe-qdbQ"
@@ -138,7 +128,17 @@ export default function Experience() {
                               {exp.location} | {exp.period}
                             </span>
                           </div>
-                          <p className="text-muted-foreground mb-4">{exp.description}</p>
+                          {
+                            Array.isArray(exp.description) ? (
+                              <ul className="list-disc pl-5 mb-4">
+                                {exp.description.map((desc, i) => (
+                                  <li key={i} className="text-muted-foreground">{desc}</li>
+                                ))}
+                              </ul>
+                            ) : (
+                              <p className="text-muted-foreground mb-4">{exp.description}</p>
+                            )
+                          }
                           <div className="flex flex-wrap gap-2">
                             {exp.skills.map((skill) => (
                               <Badge key={skill} variant="secondary">

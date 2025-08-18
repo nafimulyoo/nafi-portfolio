@@ -20,9 +20,9 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "AI Smart Energy Monitoring System",
+      title: "ElisaAI: AI-Integrated Smart Energy Monitoring System",
       description:
-        "Integration of Generative AI in electrical energy monitoring for smart energy management in ITB, developed as part of my final-year thesis at ITB.",
+        "ElisaAI, a multi-agent LLM system integrated with ITB’s energy monitoring platform (Elisa). The system enables natural language queries for electricity usage, provides automated analysis & visualization through an AI-driven analytics dashboard.",
       image: "/project/elisa.png?height=400&width=600",
       tags: ["Generative AI", "Large Language Models", "Multi-Agent Systems", "Full Stack Development"],
       category: "",

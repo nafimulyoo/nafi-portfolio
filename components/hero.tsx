@@ -15,7 +15,7 @@ export default function Hero() {
 
   const texts = [
     "Nafi Mulyo Kusumo",
-    "an AI & ML Enthusiast",
+    "an Aspiring AI Engineer",
     "a Lifelong Learner"
   ]
 
@@ -81,7 +81,7 @@ export default function Hero() {
             </h1>
             <div className="h-[60px]">
               <p className="sm:text-xl md:text-xl lg:text-2xl text-muted-foreground max-w-[700px] mx-auto mt-4">
-               Data Intelligence Intern @ Astra International | Engineering Physics Undergraduate @ ITB | Building Intelligent Systems that Solve Real Problems
+               Ex-Data Intelligence Intern @ Astra International | Engineering Physics Graduate @ ITB | Building Intelligent Systems that Solve Real Problems
               </p>
             </div>
           </motion.div>

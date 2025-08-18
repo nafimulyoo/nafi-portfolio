@@ -76,8 +76,8 @@ export default function Contact() {
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       title: "Location",
-      content: "Kabupaten Bogor, West Java, Indonesia",
-      link: "https://maps.google.com?q=Kabupaten+Bogor,+West+Java,+Indonesia",
+      content: "Bekasi, West Java, Indonesia",
+      link: "https://maps.app.goo.gl/8wTeXHny5XzgvUUc9",
     },
   ]
 
