@@ -29,7 +29,7 @@ export default function About() {
                 <CardContent className="p-6">
                   <p className="text-muted-foreground">
                     Hi! I'm <span className="font-bold">Nafi</span> 👋
-                    I{"’"}m an Aspiring AI Engineer passionate about building intelligent systems that combine Large Language Models (LLMs), multi-agent workflows, and RAG pipelines to solve real-world problems. My experience spans from developing AI-powered chatbots and lead generation systems at Astra International to creating ElisaAI, a multi-agent LLM system integrated with ITB{"’"}s energy monitoring platform, enabling natural language queries.
+                    I{"’"}m an Cloud AI Engineer passionate about building intelligent systems that combine Large Language Models (LLMs), multi-agent workflows, and RAG pipelines to solve real-world problems. My experience spans from developing AI-powered chatbots and lead generation systems at Astra International to creating ElisaAI, a multi-agent LLM system integrated with ITB{"’"}s energy monitoring platform, enabling natural language queries.
                   </p>
                 </CardContent>
             </Card>

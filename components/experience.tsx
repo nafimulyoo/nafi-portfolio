@@ -14,6 +14,19 @@ export default function Experience() {
 
   const experiences = [
     {
+      title: "Cloud AI Engineer",
+      company: "PT EBconnection Indonesia",
+      location: "Jakarta, Indonesia",
+      period: "October 2025 - Present",
+      description: [
+        "Build and deploy Machine Learning and AI solutions on Google Cloud Platform to solve business challenges.",
+        "Collaborate with cross-functional teams to design and implement AI-driven applications that enhance operational efficiency and decision-making."
+      ],
+      skills: ["Large Language Models", "Vertex AI", "Google Cloud Platform", "AI Solutions"],
+      type: "Full-time",
+      logo: "ebconnection.jpg",
+    },
+    {
       title: "Data Intelligence Intern",
       company: "PT Astra International Tbk",
       location: "Jakarta, Indonesia",
@@ -24,7 +37,7 @@ export default function Experience() {
       ],
       skills: ["Large Language Models", "Data Science", "Data Strategies", "Data Product"],
       type: "Internship",
-      logo: "https://media.licdn.com/dms/image/v2/C4E0BAQEM6oE-kYjm-A/company-logo_200_200/company-logo_200_200/0/1631319377177?e=1756339200&v=beta&t=F__RfbPHGSswG4Vdl2UYv1ATOHV_yZaj6lqS4_6x0rE",
+      logo: "astra.jpg",
     },
     {
       title: "Instrument Inspection Engineer Intern",
@@ -39,7 +52,7 @@ export default function Experience() {
       ],
       skills: ["Industrial Control System", "Safety Instrumented Systems", "Programmable Logic Controller (PLC)", "Reliability Engineering"],
       type: "Internship",
-      logo: "https://media.licdn.com/dms/image/v2/C510BAQGE-Idze3oUkA/company-logo_200_200/company-logo_200_200/0/1630602806622?e=1756339200&v=beta&t=p8-K240inF3Yf74xCNo1TVAlKfnlVKojLdtVvuGDNJM",
+      logo: "/kpi.jpg",
     },
     {
       title: "IoT Engineer Intern",
@@ -53,7 +66,7 @@ export default function Experience() {
       ],
       skills: ["Arduino", "C++", "Electronics", "Internet of Things"],
       type: "Internship",
-      logo: "https://media.licdn.com/dms/image/v2/C560BAQGaDU7oTWTx2w/company-logo_200_200/company-logo_200_200/0/1645127224563/elevarm_logo?e=1756339200&v=beta&t=HcJ04Nnb8Gxe88uxjSs_FFpgyfB5fWzNvltOffg69HA",
+      logo: "/elevarm.jpg",
     },
     {
       title: "AI Engineer Intern",
@@ -66,7 +79,7 @@ export default function Experience() {
       ],
       skills: ["Large Language Models", "FastAPI", "Next.js", "React"],
       type: "Internship",
-      logo: "https://media.licdn.com/dms/image/v2/C510BAQHA4HeAkK_YKg/company-logo_200_200/company-logo_200_200/0/1630592338936?e=1756339200&v=beta&t=LBv4pwizPNSEkxbrF8ZU3TRAnx1ZZkG1edERKe-qdbQ"
+      logo: "/javatech.jpg",
     }
   ]
 
