@@ -24,7 +24,7 @@ export default function Experience() {
       ],
       skills: ["Large Language Models", "Vertex AI", "Google Cloud Platform", "AI Solutions"],
       type: "Full-time",
-      logo: "ebconnection.jpg",
+      logo: "ebconnect.jpg",
     },
     {
       title: "Data Intelligence Intern",
